@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="file.js"></script>     <!-- Запись в файл -->
+	<link rel="stylesheet" href="css.css" type="text/css"/>
+	<link rel="stylesheet" href="css/style.css"> 
+
+</head>
+<body >
+
+	<div id="login">
+		<form class="form-container" name="form_text"  align=middle>    
+			<div class="form-title"><h2>Password local manager</h2></div>
+
+			<div class="form-title">Name</div>
+			<input class="form-field" type="text" name="input_name"  placeholder="enter name" autocomplete="off"/><br/>
+
+			<div class="form-title">Login</div>
+			<input class="form-field" type="text" name="input_login"  placeholder="enter login" autocomplete="off"/><br/>
+
+
+			<div class="form-title" id="text">Password</div>
+			<input class="form-field" type="password" name="input_pass"   placeholder="enter password" /><br />
+
+			
+
+				<input class="button" type="submit" value="Save"  onclick="appending(document.form_text.input_name.value+'   ===============','\r\n===========   '),appending(document.form_text.input_login.value,'login: '),appending(document.form_text.input_pass.value,'password: ')" />			
+
+			
+		</form>
+
+	</div>
+	<br>
+
+
+
+
+ <u align="center"><h3><strong> © Turovets Maxim 2018 KPI FICT</strong></h3></u>
+</body>
+</html>
+
+
